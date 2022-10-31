@@ -2,23 +2,23 @@
 
 int main(void){
 
-    double a, b ,c, tri, cir, trap, quad, ret, pi;
-    
-    scanf("%lf %lf %lf", &a, &b, &c);
+    double a, b, c;
+    double area;
+    double pi = 3.14159;
 
-    pi = 3.14159;
+    scanf("%lf", &a);
+    scanf("%lf", &b);
+    scanf("%lf", &c);
 
-    tri = (a * b)/2;
-    cir = pi * (c*c);
-    trap = ((b+b) * a)/2;
-    quad = a * a;
-    ret = a * b;
+    area = (a * c)/2;
+        printf("TRIANGULO: %.3lf\n", area);
+    area = pi*(c*c);
+        printf("CIRCULO: %.3lf\n", area);
+    area = (c*(a+b))/2;
+        printf("TRAPEZIO: %.3lf\n", area);
+    area = b * b;
+        printf("QUADRADO: %.3lf\n", area);
+    area = a * b;
+        printf("RETANGULO: %.3lf\n", area);
 
-   
-    printf("TRIANGULO: %.3lf\n", tri);
-    printf("CIRCULO: %.3lf\n", cir);
-    printf("TRAPEZIO: %.3lf\n", trap);
-    printf("QUADRADO: %.3lf\n", quad);
-    printf("RETANGULO: %.3lf\n", ret);
-    
 }
